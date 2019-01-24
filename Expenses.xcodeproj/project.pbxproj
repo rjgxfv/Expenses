@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		EF06845421FA4CCE00E22371 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF06845321FA4CCE00E22371 /* AppDelegate.swift */; };
-		EF06845621FA4CCE00E22371 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF06845521FA4CCE00E22371 /* ViewController.swift */; };
 		EF06845921FA4CCE00E22371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF06845721FA4CCE00E22371 /* Main.storyboard */; };
 		EF06845B21FA4CD000E22371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF06845A21FA4CD000E22371 /* Assets.xcassets */; };
 		EF06845E21FA4CD000E22371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF06845C21FA4CD000E22371 /* LaunchScreen.storyboard */; };
 		EF06846921FA4CD000E22371 /* ExpensesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF06846821FA4CD000E22371 /* ExpensesTests.swift */; };
 		EF06847421FA4CD000E22371 /* ExpensesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF06847321FA4CD000E22371 /* ExpensesUITests.swift */; };
+		EF06848221FA4E3E00E22371 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF06848121FA4E3E00E22371 /* ExpensesViewController.swift */; };
+		EF06848421FA4EFC00E22371 /* Expence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF06848321FA4EFC00E22371 /* Expence.swift */; };
+		EF06848621FA5B0100E22371 /* ExpenceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF06848521FA5B0100E22371 /* ExpenceTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		EF06845021FA4CCE00E22371 /* Expenses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expenses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF06845321FA4CCE00E22371 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF06845521FA4CCE00E22371 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF06845821FA4CCE00E22371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF06845A21FA4CD000E22371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF06845D21FA4CD000E22371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		EF06846F21FA4CD000E22371 /* ExpensesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpensesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF06847321FA4CD000E22371 /* ExpensesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesUITests.swift; sourceTree = "<group>"; };
 		EF06847521FA4CD000E22371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF06848121FA4E3E00E22371 /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
+		EF06848321FA4EFC00E22371 /* Expence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expence.swift; sourceTree = "<group>"; };
+		EF06848521FA5B0100E22371 /* ExpenceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenceTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				EF06845321FA4CCE00E22371 /* AppDelegate.swift */,
-				EF06845521FA4CCE00E22371 /* ViewController.swift */,
+				EF06848121FA4E3E00E22371 /* ExpensesViewController.swift */,
 				EF06845721FA4CCE00E22371 /* Main.storyboard */,
 				EF06845A21FA4CD000E22371 /* Assets.xcassets */,
 				EF06845C21FA4CD000E22371 /* LaunchScreen.storyboard */,
 				EF06845F21FA4CD000E22371 /* Info.plist */,
+				EF06848321FA4EFC00E22371 /* Expence.swift */,
+				EF06848521FA5B0100E22371 /* ExpenceTableViewCell.swift */,
 			);
 			path = Expenses;
 			sourceTree = "<group>";
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF06845621FA4CCE00E22371 /* ViewController.swift in Sources */,
+				EF06848621FA5B0100E22371 /* ExpenceTableViewCell.swift in Sources */,
 				EF06845421FA4CCE00E22371 /* AppDelegate.swift in Sources */,
+				EF06848221FA4E3E00E22371 /* ExpensesViewController.swift in Sources */,
+				EF06848421FA4EFC00E22371 /* Expence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
